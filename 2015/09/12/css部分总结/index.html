@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>CSS总结 | SPROUT’S BLOG</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="SPROUT’S BLOG">
+    <meta name="author" content="Sprout">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon2.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="SPROUT’S BLOG" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">notes</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">projects</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">SPROUT’S BLOG</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            
+                            
+                            
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2015-09-12T10:26:06.000Z" itemprop="datePublished">
+          2015-09-12
+      </time>
+    
+</span>
+                <h1>CSS总结</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="css部分总结"><a href="#css部分总结" class="headerlink" title="css部分总结"></a>css部分总结</h1><h2 id="一、选择器"><a href="#一、选择器" class="headerlink" title="一、选择器"></a>一、选择器</h2><ol>
+<li>标签选择器   </li>
+<li>类选择器<ul>
+<li>一个标签可以调用多个类选择器</li>
+</ul>
+</li>
+<li><p>id选择器</p>
+<ul>
+<li>id必须保证唯一，一个标签可以同时调用类和id选择器，但是不能同时调用两个id选择器</li>
+</ul>
+</li>
+<li><p>通配符选择器 ：* 不推荐使用</p>
+</li>
+<li>交集选择器 ：div.box\div#box</li>
+<li>后代选择器 ：空格</li>
+<li>子代选择器 ：父&gt;子</li>
+<li>并集选择器 ： 逗号分隔</li>
+</ol>
+<h2 id="二、块、行内和行内块"><a href="#二、块、行内和行内块" class="headerlink" title="二、块、行内和行内块"></a>二、块、行内和行内块</h2><h3 id="2-1-区分"><a href="#2-1-区分" class="headerlink" title="2.1 区分"></a>2.1 区分</h3><ol>
+<li><p>块级元素有哪些</p>
+<ul>
+<li>div \ p \ h1-h6 \ ul li \ ol \dl</li>
+<li>独占一行、可以定义宽高、默认父元素的宽度（高度不会）</li>
+</ul>
+</li>
+<li><p>行内元素有哪些</p>
+<ul>
+<li>span \ a \ em \ i \ b \ strong \ del </li>
+<li>在一行显示、不能直接定义宽高，内容撑开的，只能设置左右的内外边距，不能设置上下</li>
+</ul>
+</li>
+<li><p>行内块</p>
+<ul>
+<li>img \ input \ textarea</li>
+<li>在一行显示，可以定义宽高，可以设置上下的内外边距</li>
+</ul>
+</li>
+</ol>
+<h3 id="2-2-互转"><a href="#2-2-互转" class="headerlink" title="2.2 互转"></a>2.2 互转</h3><ol>
+<li><p>块转行内：  <figure class="highlight plain"><figcaption><span>: inline;```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">2. 行内转块：  ```display : block;</div></pre></td></tr></table></figure></p>
+</li>
+<li><p>块、行内转行内块：  <figure class="highlight plain"><figcaption><span>: inline-block;```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">## 三、css的三大特性</div><div class="line"></div><div class="line">### 3.1层叠性</div><div class="line"></div><div class="line">* 当多个样式所用于同一个标签的时候，总是执行后边的样式</div><div class="line"></div><div class="line"></div><div class="line">### 3.2继承性</div><div class="line"></div><div class="line">* 嵌套关系下，文字的所有属性都能被继承</div><div class="line">* 特殊情况：① h1-h6的粗细和文字大小自带的，不能继承 ；  ② a标签颜色不能继承父元素</div><div class="line"></div><div class="line"></div><div class="line">### 3.3 优先级</div><div class="line"></div><div class="line">* 默认样式 &lt; 标签选择器 &lt; 类选择器 &lt; id 选择器 &lt; 行内样式 &lt; !important</div><div class="line">* 0  1  10  100 1000 1000以上</div><div class="line"></div><div class="line"></div><div class="line">## 四、背景属性</div><div class="line"></div><div class="line">* background-position : left \ right \ top \ bottom  center;</div><div class="line">  * 直接写两个方位值，顺序无要求</div><div class="line">  * 只写一个方位值，另一个默认居中</div><div class="line">  * 写数值  第一个距左 第二个距顶</div><div class="line"></div><div class="line">* background-attachment(设置背景是否固定)</div><div class="line">  - scrol  默认，滚动</div><div class="line">  - fixed 固定不动，相对于浏览器</div><div class="line"></div><div class="line"></div><div class="line">* 背景属性连写：(背景图片为必写项)</div><div class="line">```css</div><div class="line">background:#ccc url(1.jpg) no-repeat top;</div></pre></td></tr></table></figure></p>
+</li>
+</ol>
+<h2 id="五、盒模型"><a href="#五、盒模型" class="headerlink" title="五、盒模型"></a>五、盒模型</h2><h3 id="5-1什么是盒子模型"><a href="#5-1什么是盒子模型" class="headerlink" title="5.1什么是盒子模型"></a>5.1什么是盒子模型</h3><ul>
+<li>盒子模型包括：内容(content)、外边距(margin)、内填充(padding)、边框(border)</li>
+</ul>
+<h3 id="5-2问题"><a href="#5-2问题" class="headerlink" title="5.2问题"></a>5.2问题</h3><ol>
+<li><p>垂直方向的margin合并</p>
+<ul>
+<li>出现情况：上下两个盒子、上盒子设置了margin-bottom: 30px;  下盒子设置了margin-top: 20px;  这时就会出现外边距合并</li>
+<li>只出现于垂直方向</li>
+<li>取大值</li>
+</ul>
+</li>
+<li><p>外边距塌陷</p>
+<ul>
+<li>两个盒子嵌套： 给子元素margin-top,父元素也会一起向下移动</li>
+<li>只出现于垂直方向</li>
+<li>解决：  ①给父盒子设置边框  ②给父盒子overflow: hidden;</li>
+</ul>
+</li>
+</ol>
+<h3 id="5-3盒子宽度问题"><a href="#5-3盒子宽度问题" class="headerlink" title="5.3盒子宽度问题"></a>5.3盒子宽度问题</h3><ul>
+<li>盒子宽度= border + padding + width</li>
+</ul>
+<h2 id="六、浮动"><a href="#六、浮动" class="headerlink" title="六、浮动"></a>六、浮动</h2><blockquote>
+<p>元素浮动后会脱离标准流，不占据原来的位置，所以有时候在不给浮动元素设置高的情况下，下面的盒子会占据浮动盒子原来的位置，这时就要清除浮动，并不是不浮动，而是清除浮动带来的影响</p>
+</blockquote>
+<ul>
+<li>清除浮动的方法以及优缺点</li>
+</ul>
+<ol>
+<li>额外标签法  <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">'clear: both'</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<ul>
+<li>缺点：会产生多余的代码</li>
+</ul>
+<ol>
+<li>给浮动元素父容器加：overflow: hidden<ul>
+<li>缺点：溢出的部分会隐藏</li>
+</ul>
+</li>
+</ol>
+<ol>
+<li><p>单伪元素清除浮动法</p>
+<pre><code>​<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">.clear: after&#123;</div><div class="line">  content :'.';</div><div class="line">  height:'0';</div><div class="line">  visibility:'hidden';</div><div class="line">  overflow:'hidden';</div><div class="line">  clear: both;</div><div class="line">&#125;</div><div class="line">//为了兼容ie</div><div class="line">.clearfix:&#123;zoom:1;&#125;</div><div class="line">​</div></pre></td></tr></table></figure>
+</code></pre><ul>
+<li>比较老一些的网站使用，例如：新浪，网易</li>
+</ul>
+</li>
+</ol>
+<ol>
+<li><p>双伪元素清除浮动法</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">.clear: before,.clear :after&#123;</div><div class="line">  content:'';</div><div class="line">  display: table;</div><div class="line">&#125;</div><div class="line">.clear: after&#123;</div><div class="line">  clear: both;</div><div class="line">&#125;</div><div class="line">//为了兼容ie</div><div class="line">.clearfix:&#123;zoom:1;&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>比较新的网站用，例如京东、小米、淘宝</li>
+</ul>
+</li>
+</ol>
+<h2 id="七、css初始化"><a href="#七、css初始化" class="headerlink" title="七、css初始化"></a>七、css初始化</h2><ul>
+<li>作用：<ul>
+<li>各浏览器对基础样式渲染不一致，css样式初始化为了考虑到浏览器的兼容问题，使渲染的页面风格统一</li>
+</ul>
+</li>
+</ul>
+<h2 id="八、定位position"><a href="#八、定位position" class="headerlink" title="八、定位position"></a>八、定位position</h2><ol>
+<li>静态定位：position: static  默认</li>
+<li>绝对定位：position: absolute <ul>
+<li>基于浏览器出发、脱标、行内可转行内块</li>
+</ul>
+</li>
+<li>相对定位：position: relative<ul>
+<li>基于自身出发、不脱标</li>
+</ul>
+</li>
+<li>固定定位：position: fixed<ul>
+<li>脱标</li>
+</ul>
+</li>
+</ol>
+<h2 id="九、css的可见性"><a href="#九、css的可见性" class="headerlink" title="九、css的可见性"></a>九、css的可见性</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">overflow</span>: <span class="selector-tag">hidden</span>  溢出隐藏</div><div class="line"><span class="selector-tag">display</span>: <span class="selector-tag">none</span>  不可见，不占据原来位置</div><div class="line"><span class="selector-tag">visibility</span>: <span class="selector-tag">hidden</span> 显示模式为隐藏，占据原来位置</div></pre></td></tr></table></figure>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2015/10/22/HTML5第一天/" style="float: left;">
+        ← HTML5
+    </a>
+    
+    
+    <a class="pull-right" href="/2015/09/09/HTML部分总结/">
+        HTML总结 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Sprout. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
