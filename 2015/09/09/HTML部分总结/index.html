@@ -167,7 +167,27 @@
 <li>Safari   —–&gt;   webkit内核</li>
 </ul>
 <h2 id="二、每个HTML文件开头的Doctype是什么？"><a href="#二、每个HTML文件开头的Doctype是什么？" class="headerlink" title="二、每个HTML文件开头的Doctype是什么？"></a>二、每个HTML文件开头的Doctype是什么？</h2><ul>
-<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">## 三、 HTML</div><div class="line"></div><div class="line">### 3.1概念</div><div class="line"></div><div class="line">&gt; HTML: Hyper Text Markup Language 超文本标记语言</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">### 3.2 标签分类</div><div class="line"></div><div class="line">####3.2.1 单标签</div><div class="line">* 没有结束标签  （&lt;!Doctype html&gt;、&lt;hr/&gt;、&lt;br/&gt;、&lt;img/&gt;）</div><div class="line">* </div><div class="line">#### 3.2.2 双标签</div><div class="line">* 有开始标签和结束标签</div><div class="line">* 使用注意：</div><div class="line">  * **h1标签只能在页面中出现一次，多用不利于SEO**</div><div class="line"></div><div class="line">#### 3.2.3标签关系分类</div><div class="line">* 嵌套关系</div><div class="line">* 并列关系</div><div class="line"></div><div class="line"></div><div class="line">### 3.3超链接</div><div class="line"></div><div class="line">* ```&lt;a href=&quot;链接&quot; title=&quot;提示文本&quot; target=&quot;_self/_blank&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure>
+<li>&lt;!DOCTYPE&gt;声明位于文档中最前面的位置，处<html>标签之前，作用是告知浏览器用哪种规范解析页面（XHTML\HTML）</html></li>
+</ul>
+<h2 id="三、-HTML"><a href="#三、-HTML" class="headerlink" title="三、 HTML"></a>三、 HTML</h2><h3 id="3-1概念"><a href="#3-1概念" class="headerlink" title="3.1概念"></a>3.1概念</h3><blockquote>
+<p>HTML: Hyper Text Markup Language 超文本标记语言</p>
+</blockquote>
+<h3 id="3-2-标签分类"><a href="#3-2-标签分类" class="headerlink" title="3.2 标签分类"></a>3.2 标签分类</h3><p>####3.2.1 单标签</p>
+<ul>
+<li>没有结束标签  （&lt;!Doctype html&gt;、<hr>、<br>、<img>）</li>
+<li>​<h4 id="3-2-2-双标签"><a href="#3-2-2-双标签" class="headerlink" title="3.2.2 双标签"></a>3.2.2 双标签</h4></li>
+<li>有开始标签和结束标签</li>
+<li>使用注意：<ul>
+<li><strong>h1标签只能在页面中出现一次，多用不利于SEO</strong></li>
+</ul>
+</li>
+</ul>
+<h4 id="3-2-3标签关系分类"><a href="#3-2-3标签关系分类" class="headerlink" title="3.2.3标签关系分类"></a>3.2.3标签关系分类</h4><ul>
+<li>嵌套关系</li>
+<li>并列关系</li>
+</ul>
+<h3 id="3-3超链接"><a href="#3-3超链接" class="headerlink" title="3.3超链接"></a>3.3超链接</h3><ul>
+<li><p><a href="链接" title="提示文本" target="_self/_blank"></a></p>
 <ul>
 <li>target =”_self”  默认，在本页打开</li>
 <li><strong>target=”_blank”</strong> 在新的页面打开  （实际运用较多）</li>
@@ -175,16 +195,22 @@
 </li>
 <li><p><strong>锚点</strong>：</p>
 <ul>
-<li><strong>设置锚点</strong>： <figure class="highlight plain"><figcaption><span>id="md"><p></p>```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">* **链接到锚点**： ```&lt;a href=&quot;#md&quot;&gt;&lt;/a&gt;</div></pre></td></tr></table></figure></li>
+<li><strong>设置锚点</strong>： <p id="md"></p></li>
+<li><strong>链接到锚点</strong>： <a href="#md"></a></li>
 </ul>
 </li>
 <li><p>压缩包下载</p>
 <ul>
-<li><figure class="highlight plain"><figcaption><span>href="压缩包名称">下载```</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div><div class="line">### 3.4补充标签</div><div class="line">* ```&lt;em&gt;```   斜体</div><div class="line">* ```&lt;ins&gt;```下划线</div><div class="line">* ```&lt;del&gt;```删除线</div><div class="line"></div><div class="line"></div><div class="line">### 3.5列表</div><div class="line"></div><div class="line">#### 3.5.1无序列表 </div><div class="line"></div><div class="line">```html</div><div class="line">&lt;ul type=&quot;disc /默认值，实心小圆点&quot;&gt;</div><div class="line">	      square / 实心小方块</div><div class="line">          circle  /空心小圆圈</div><div class="line">&lt;/ul&gt;</div></pre></td></tr></table></figure>
-</li>
+<li><a href="压缩包名称">下载</a></li>
 </ul>
 </li>
 </ul>
+<h3 id="3-4补充标签"><a href="#3-4补充标签" class="headerlink" title="3.4补充标签"></a>3.4补充标签</h3><ul>
+<li><em>   斜体</em></li>
+<li><ins>  下划线</ins></li>
+<li><del> 删除线</del></li>
+</ul>
+<h3 id="3-5列表"><a href="#3-5列表" class="headerlink" title="3.5列表"></a>3.5列表</h3><h4 id="3-5-1无序列表"><a href="#3-5-1无序列表" class="headerlink" title="3.5.1无序列表"></a>3.5.1无序列表</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">"disc /默认值，实心小圆点"</span>&gt;</span></div><div class="line">	      square / 实心小方块</div><div class="line">          circle  /空心小圆圈</div><div class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></div></pre></td></tr></table></figure>
 <h4 id="3-5-2有序列表"><a href="#3-5-2有序列表" class="headerlink" title="3.5.2有序列表"></a>3.5.2有序列表</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">"1/a/A/i/I"</span>  <span class="attr">start</span>=<span class="string">""</span>(从几开始）&gt;</span></div><div class="line">		  1 a A i  I</div><div class="line">		  2 b B ii II</div><div class="line">		  3 c C iii III</div><div class="line">		  4 d D iv  IV</div><div class="line">		 ...</div><div class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></div></pre></td></tr></table></figure>
 <h4 id="3-5-3自定义列表"><a href="#3-5-3自定义列表" class="headerlink" title="3.5.3自定义列表"></a>3.5.3自定义列表</h4><ul>
 <li><strong>dt与dd是并列关系</strong>，常用在网页的尾部分类</li>
@@ -198,12 +224,16 @@
 <li>常用属性<ol>
 <li><strong>cellspacing</strong> : 单元格与单元格之间的距离  (默认值为2)</li>
 <li><strong>cellpadding</strong>：内容距边框的距离 （无默认值）</li>
-<li>**<figure class="highlight plain"><figcaption><span>colspan="2">```**  :水平方向两个单元格合并</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">  4. **```&lt;td rowspan=&quot;2&quot;&gt;&lt;/td&gt;```**  :垂直方向两个单元格合并</div><div class="line">  5. **```&lt;th&gt;&lt;/th&gt;```表头** : 和```&lt;td&gt;```一样，一种比较特殊的td，文字加粗，居中</div><div class="line">  6. **```&lt;caption&gt;&lt;/caption&gt;```表格标题** : 写在```&lt;table&gt;```的下面,在表格的最上面显示的</div><div class="line"></div><div class="line"></div><div class="line">### 3.7表单&lt;form&gt;&lt;/form&gt;</div></pre></td></tr></table></figure></li>
+<li><strong><td colspan="2"></td></strong>  :水平方向两个单元格合并</li>
+<li><strong><td rowspan="2"></td></strong>  :垂直方向两个单元格合并</li>
+<li><strong><th></th>表头</strong> : 和<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">  6. **&lt;caption&gt;&lt;/caption&gt;表格标题** : 写在```&lt;table&gt;```的下面,在表格的最上面显示的</div><div class="line"></div><div class="line"></div><div class="line">### 3.7表单&lt;form&gt;&lt;/form&gt;</div><div class="line"></div><div class="line">```html</div><div class="line">&lt;form  action=&quot;1.php&quot; method=&quot;get(提交到地址栏)/post(post相对安全)&quot;&gt;</div><div class="line">                   ↓                ↓</div><div class="line">           信息提交给谁          提交信息的方式</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure></li>
 </ol>
 </li>
 </ul>
-<p><form action="1.php" method="get(提交到地址栏)/post(post相对安全)"><br>                   ↓                ↓<br>           信息提交给谁          提交信息的方式<br></form><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### 3.7.1表单类别</div><div class="line"></div><div class="line">1. 单行文本输入框</div><div class="line">```html</div><div class="line">&lt;input type=&apos;text&apos; name=&apos;user&apos; value=&apos;默认值&apos; maxlength=&apos;6&apos; readonly=&apos;readonly&apos; disabled=&apos;disabled&apos;&gt;</div></pre></td></tr></table></figure></p>
-<ol>
+<h4 id="3-7-1表单类别"><a href="#3-7-1表单类别" class="headerlink" title="3.7.1表单类别"></a>3.7.1表单类别</h4><ol>
+<li><p>单行文本输入框</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">'text'</span> <span class="attr">name</span>=<span class="string">'user'</span> <span class="attr">value</span>=<span class="string">'默认值'</span> <span class="attr">maxlength</span>=<span class="string">'6'</span> <span class="attr">readonly</span>=<span class="string">'readonly'</span> <span class="attr">disabled</span>=<span class="string">'disabled'</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
 <li><p>密码输入框</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">'password'</span> <span class="attr">name</span>=<span class="string">'pwd'</span> &gt;</span></div></pre></td></tr></table></figure>
 </li>
@@ -221,9 +251,12 @@
 <figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">select</span>&gt;</span></div><div class="line">	<span class="tag">&lt;<span class="name">option</span>&gt;</span><span class="tag">&lt;/<span class="name">option</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></div></pre></td></tr></table></figure>
 <ul>
 <li>selected=’selected’设置默认选中项</li>
-<li><figure class="highlight plain"><figcaption><span>label='北京'> ```下拉列表分组信息   label分组信息名称</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">6. 文本域</div><div class="line"></div><div class="line">```html</div><div class="line">&lt;textarea rows=&apos;12&apos; clos=&apos;40&apos;&gt;&lt;/textarea&gt;</div><div class="line">&lt;!--rows行数   cols字符长度--&gt;</div></pre></td></tr></table></figure>
-</li>
+<li><optgroup label="北京"> </optgroup>下拉列表分组信息   label分组信息名称</li>
 </ul>
+<ol>
+<li>文本域</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">textarea</span> <span class="attr">rows</span>=<span class="string">'12'</span> <span class="attr">clos</span>=<span class="string">'40'</span>&gt;</span><span class="tag">&lt;/<span class="name">textarea</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--rows行数   cols字符长度--&gt;</span></div></pre></td></tr></table></figure>
 <ol>
 <li>文件上传组件</li>
 </ol>
