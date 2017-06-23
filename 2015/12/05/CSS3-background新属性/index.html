@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>CSS3-background新属性 | SPROUT’S BLOG</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="SPROUT’S BLOG">
+    <meta name="author" content="Sprout">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon2.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="SPROUT’S BLOG" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+    
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">notes</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">projects</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">SPROUT’S BLOG</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            
+                            
+                            
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2015-12-05T11:46:05.000Z" itemprop="datePublished">
+          2015-12-05
+      </time>
+    
+</span>
+                <h1>CSS3-background新属性</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h1 id="css3"><a href="#css3" class="headerlink" title="css3"></a>css3</h1><h2 id="background新属性"><a href="#background新属性" class="headerlink" title="background新属性"></a>background新属性</h2><ul>
+<li>知识点：<h3 id="background-size"><a href="#background-size" class="headerlink" title="background-size:"></a><strong>background-size</strong>:</h3></li>
+<li><strong>background-size: 300px 300px</strong>:支持直接指定具体的大小</li>
+</ul>
+<ul>
+<li><strong>background-size: cover</strong>:直接等比放大图片，可能会有一部分出去，出去的部分会被切掉</li>
+</ul>
+<ul>
+<li><p><strong>background-size: contain: </strong>contain 等比放大，直到某一边定格，立刻停止放大，保证图片在盒子内部，只是图片不能保证平铺</p>
+</li>
+<li><p><strong>background-size的复合写法</strong>：</p>
+<ul>
+<li>css3中支持设置多个背景</li>
+<li>必须写斜杠</li>
+<li>使用逗号分隔</li>
+<li>一般会在末尾设置一个背景颜色，当图片加载不出来，或者由于网速需要等待时，起码让用户看到颜色，提升用户体验</li>
+<li>具体写法见下面代码区</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>05-background新属性<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        .man&#123;</div><div class="line">            width: 300px;</div><div class="line">            height: 300px;</div><div class="line">            margin: 100px auto;</div><div class="line">            border: 1px solid #000;</div><div class="line">            background-image: url("img/ljj.jpg");</div><div class="line">            background-repeat: no-repeat;</div><div class="line">            background-position: left;</div><div class="line">            /*支持直接指定具体的大小*/</div><div class="line">            background-size: 300px 300px;</div><div class="line">            /*cover 直接等比放大图片，可能会有一部分出去，出去的部分会被切掉*/</div><div class="line">            background-size: cover;</div><div class="line">            /*contain 等比放大，直到某一边定格，立刻停止放大，</div><div class="line">              保证图片在盒子内部，只是图片不能保证平铺*/</div><div class="line">            background-size: contain;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        /*复合写法*/</div><div class="line">        .man2&#123;</div><div class="line">            width: 300px;</div><div class="line">            height: 300px;</div><div class="line">            margin: 10px auto;</div><div class="line">            border: 1px solid #000;</div><div class="line">            /*css3中支持设置多个背景*/</div><div class="line">            /*必须写斜杠*/</div><div class="line">            /*使用逗号分隔，一般会在末尾设置一个背景颜色，当图片加载不出来，</div><div class="line">            或者由于网速需要等待时，起码让用户看到颜色，提升用户体验*/</div><div class="line">            background:</div><div class="line">            url("img/ljj.jpg") no-repeat top left/100px 100px,</div><div class="line">            url("img/wyz.jpg") no-repeat top center/100px 100px,</div><div class="line">            url("img/csc.jpg") no-repeat top right/100px 100px;</div><div class="line"></div><div class="line">        &#125;</div><div class="line"></div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"man"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"man2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>知识点：</strong></p>
+</blockquote>
+<h3 id="background-origin（背景图片的开始位置）："><a href="#background-origin（背景图片的开始位置）：" class="headerlink" title="background-origin（背景图片的开始位置）："></a>background-origin（背景图片的开始位置）：</h3><ul>
+<li><strong>border-box</strong>    :从边框的位置开始</li>
+</ul>
+<ul>
+<li><strong>content-box</strong>  :从内容开始，有padding时，把padding空出来</li>
+</ul>
+<ul>
+<li><strong>padding-box</strong> :有padding时不会空出padding</li>
+</ul>
+<ul>
+<li>复合写法：直接在末未添加即可：</li>
+<li>background: url(“img/wyz.jpg”) no-repeat center/cover content-box;</li>
+</ul>
+<h3 id="border-image-添加图片相框属性"><a href="#border-image-添加图片相框属性" class="headerlink" title="border-image 添加图片相框属性"></a>border-image 添加图片相框属性</h3><ul>
+<li><p><strong>注意</strong>：相框属性的兼容性较差，所以在使用这个属性时，为了保证用户起码能看到一个基本的相框，所以必须设置一个border，如果不设置border，那么相框属性就无法使用。在浏览器不支持border-image属性时，就会使用默认的border来显示。</p>
+</li>
+<li><p>图片边框默认的宽度是border的宽度</p>
+</li>
+<li><p><strong>border-image-source</strong>：边框图片路径：url(“img/border_box.png”)</p>
+</li>
+</ul>
+<ul>
+<li><strong>border-image-slice</strong>    ：设置图片的切割 ,根据相框的小格子写尺寸：27 27；</li>
+</ul>
+<ul>
+<li><strong>border-image-width</strong> ：设置大小：宽度  30px，默认是border的宽度;</li>
+</ul>
+<ul>
+<li><strong>border-image-repeat:</strong>：设置图片的拉伸方式：<ul>
+<li><strong>stretch</strong>：默认的方式，直接拉伸，图片会变形</li>
+<li><strong>round</strong>：平铺，会考虑图片的完整性</li>
+<li><strong>repeat</strong>：复制粘贴，可能出现缺角情况</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>案例-相片闪光、图片相框<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>06-鼠标进入扫光<span class="tag">&lt;/<span class="name">title</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></div><div class="line">        body&#123;</div><div class="line">            background: url("img/wall.jpg");</div><div class="line">        &#125;</div><div class="line">        .man1&#123;</div><div class="line">            background: url("img/ljj.jpg") no-repeat center/cover;</div><div class="line">        &#125;</div><div class="line">        .man2&#123;</div><div class="line">            background: url("img/wyz.jpg") no-repeat center/cover;</div><div class="line">        &#125;</div><div class="line">        .man3&#123;</div><div class="line">            background: url("img/dc.jpg") no-repeat center/cover;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        /*属性选择器，所有以man开头的class*/</div><div class="line">        [class^="man"]&#123;</div><div class="line">            width: 150px;</div><div class="line">            height: 200px;</div><div class="line">            border: 10px dashed #fff;</div><div class="line">            float: left;</div><div class="line">            margin-left: 50px;</div><div class="line">            position: relative;</div><div class="line">            overflow: hidden;</div><div class="line">        &#125;</div><div class="line">        [class^="man"]::before&#123;</div><div class="line">            content: '';</div><div class="line">            position: absolute;</div><div class="line">            width: 40px;</div><div class="line">            height: 100%;</div><div class="line">          	/*设置渐变条，线性渐变*/</div><div class="line">            background-image: linear-gradient(to right ,rgba(255,255,255,0),rgba(255,255,255,.5),rgba(255,255,255,0));</div><div class="line">            /*这只默认值left*/</div><div class="line">            left: -40px;</div><div class="line">        &#125;</div><div class="line">        [class^="man"]:hover::before&#123;</div><div class="line">            /*过渡属性的注意点：</div><div class="line">              如果发现没有过渡效果，可能是没有起始值*/</div><div class="line">            transition: all 1s;</div><div class="line">            left: 300px;</div><div class="line">        &#125;</div><div class="line">        div:first-child&#123;</div><div class="line">            /* 背景图片的开始位置</div><div class="line">            border-box:从边框的位置开始*/</div><div class="line">            background-origin:border-box;</div><div class="line">        &#125;</div><div class="line">        div:nth-child(2)&#123;</div><div class="line">            /*content-box:从内容开始，有padding时，把padding空出来*/</div><div class="line">            padding: 10px;</div><div class="line">            /*复合写法 直接在末未添加即可*/</div><div class="line">            background: url("img/wyz.jpg") no-repeat center/cover content-box;</div><div class="line">        &#125;</div><div class="line">        div:nth-child(3)&#123;</div><div class="line">            /*padding-box：不会空出padding*/</div><div class="line">            padding: 10px;</div><div class="line">            /*复合写法*/</div><div class="line">            background: url("img/dc.jpg") no-repeat center/cover padding-box;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        /*添加相框属性</div><div class="line">           兼容性较差，为了保证用户能看到起码有个基本的相框，</div><div class="line">           必须设置一个border属性，如果不设置border，就无法使用图片相框         图片边框默认的宽度是border的宽度*/</div><div class="line">        [class^="man"]&#123;</div><div class="line">            border-image-source: url("img/border_box.png");</div><div class="line">            /*设置图片的切割 ,根据相框的小格子写尺寸*/</div><div class="line">            border-image-slice: 27 27;</div><div class="line"></div><div class="line">            /*设置大小：宽度*/</div><div class="line">            border-image-width: 30px;</div><div class="line"></div><div class="line">            /*设置图片拉伸方式*/</div><div class="line"></div><div class="line">            /*stretch：默认的方式，直接拉伸，图片会变形*/</div><div class="line">            /*border-image-repeat: stretch;*/</div><div class="line"></div><div class="line">            /*round：平铺，会考虑图片的完整性*/</div><div class="line">            border-image-repeat: round;</div><div class="line"></div><div class="line">            /*repeat：复制粘贴，可能出现缺角情况*/</div><div class="line">            /*border-image-repeat: repeat;*/</div><div class="line">        &#125;</div><div class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"man1"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"man2"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"man3"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></div></pre></td></tr></table></figure></li>
+</ul>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2015/12/05/CSS3-transform2D变换/" style="float: left;">
+        ← CSS3-transform 2D变换
+    </a>
+    
+    
+    <a class="pull-right" href="/2015/12/05/CSS3-渐变/">
+        CSS3渐变 →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2015<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By Sprout. All Rights Reserved.
+                </p>
+                
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    
+                    
+                    
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>

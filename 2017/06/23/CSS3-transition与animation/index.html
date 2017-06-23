@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>论坑 | SPROUT’S BLOG</title>
+  <title>SPROUT’S BLOG</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -151,31 +151,48 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2016-03-30T04:50:09.000Z" itemprop="datePublished">
-          2016-03-30
+      <time datetime="2017-06-23T03:18:01.991Z" itemprop="datePublished">
+          2017-06-23
       </time>
     
 </span>
-                <h1>论坑</h1>
+                <h1></h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="论坑"><a href="#论坑" class="headerlink" title="论坑"></a>论坑</h1><blockquote>
-<p>我们应该在不断的锤炼中去理解所学理论的真正含义，在实践中踩过一个一个的坑，甚至每次都在同样的坑跌下去，疼到自己谈坑色变，才能在走过同样的坑时，用最佳的最安全的路线走过去。 htmlcss的学习路线并不艰难，JS的学习路线才是万般荆棘。</p>
+      		<h1 id="CSS3-transition与animation"><a href="#CSS3-transition与animation" class="headerlink" title="CSS3-transition与animation"></a>CSS3-transition与animation</h1><blockquote>
+<p>使用transition过渡可以实现绝大多数的效果，但是需要对效果进行定制时，可以通过<code>动画 animation</code>来实现</p>
 </blockquote>
+<h2 id="过渡的优缺点"><a href="#过渡的优缺点" class="headerlink" title="过渡的优缺点"></a>过渡的优缺点</h2><ul>
+<li>transition的优点在于简单易用，但是它有几个很大的局限。</li>
+</ul>
+<ol>
+<li>transition需要事件触发，所以没法在网页加载时自动发生。</li>
+<li>transition是一次性的，不能重复发生，除非一再触发。</li>
+<li>transition只能定义开始状态和结束状态，不能定义中间状态，也就是说只有两个状态。</li>
+<li><p>一条transition规则，只能定义一个属性的变化，不能涉及多个属性。<br><code>CSS Animation</code>就是为了解决这些问题而提出的。</p>
+<p>​</p>
+</li>
+</ol>
+<h2 id="animation语法"><a href="#animation语法" class="headerlink" title="animation语法"></a>animation语法</h2><blockquote>
+<p>使用动画时,我们首先需要定义一组动画,在动画过程中我们可以对动画的步骤进行控制</p>
+</blockquote>
+<ul>
+<li><p>定义动画:<br>  使用<code>@keyFrames 关键字定义</code> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*动画名为:sevenColor</span></div><div class="line">    开始背景为红色</div><div class="line">    中途背景为橘色</div><div class="line">    结束为黄色</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> changeColor&#123;</div><div class="line">			0%&#123;<span class="attribute">background-color</span>:red;&#125;</div><div class="line">			50%&#123;<span class="attribute">background-color</span>:orange;&#125;</div><div class="line">			100%&#123;<span class="attribute">background-color</span>:yellow;&#125;</div><div class="line">&#125;    </div><div class="line"></div><div class="line"><span class="comment">/*动画名为:changeColor</span></div><div class="line">   效果跟上面的一样,只是使用关键字</div><div class="line">   from 开始</div><div class="line">   to 结束</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> sevenColor&#123;</div><div class="line">			<span class="selector-tag">from</span>&#123;<span class="attribute">background-color</span>:red;&#125;</div><div class="line">			50%&#123;<span class="attribute">background-color</span>:orange;&#125;</div><div class="line">			<span class="selector-tag">to</span>&#123;<span class="attribute">background-color</span>:yellow;&#125;</div><div class="line">&#125;   </div><div class="line"></div><div class="line"><span class="comment">/*动画名为:someProperty</span></div><div class="line">   效果跟上面的一样,只是使用关键字</div><div class="line">    添加了多个属性</div><div class="line">*/</div><div class="line">@<span class="keyword">keyframes</span> someProperty&#123;</div><div class="line">			<span class="selector-tag">from</span>&#123;</div><div class="line">			    <span class="attribute">background-color</span>:red;</div><div class="line">			    <span class="attribute">width</span>:<span class="number">100px</span>;</div><div class="line">			&#125;</div><div class="line">			50%&#123;</div><div class="line">			    <span class="attribute">background-color</span>:orange;</div><div class="line">			    <span class="attribute">transform</span>:<span class="built_in">rotate</span>(100deg);</div><div class="line">			&#125;</div><div class="line">			<span class="selector-tag">to</span>&#123;</div><div class="line">			    <span class="attribute">background-color</span>:yellow;</div><div class="line">			    <span class="attribute">height</span>:<span class="number">200px</span>;</div><div class="line">			&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>使用动画<br>  动画的使用 需要通过<code>animation</code>这个属性,他是一个复合属性,但是再添加子属性时,除<code>时间外</code>,顺序可以打乱</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">	/* 完整属性</div><div class="line">	动画名</div><div class="line">	animation-name: sevenColor;	</div><div class="line">	持续时间</div><div class="line">	animation-duration: 1s;</div><div class="line">    动画播放完毕时的状态 (还原,结束值)</div><div class="line">    animation-fill-mode: forwards;</div><div class="line">    延迟时间</div><div class="line">    animation-delay: 1s;</div><div class="line">    动画次数(具体次数,或者无限次)</div><div class="line">    animation-iteration-count: infinite;</div><div class="line">    动画的播放过渡类型</div><div class="line">    animation-timing-function: ease-in;</div><div class="line">    动画状态 running 或者pause</div><div class="line">    animation-play-state: running;</div><div class="line">    动画的方向 正向 方向 正方,反向交替 方向,正向交替</div><div class="line">        比如 动画为 大-小</div><div class="line">            交替:大-小-大</div><div class="line">	animation-direction: alternate;</div><div class="line">			*/</div><div class="line">/* 复合写法 </div><div class="line">    保证 第一个时间 是动画时间</div><div class="line">        第二个时间 是延迟时间</div><div class="line">        其余属性的位置可以任意写</div><div class="line">        animationName 是动画名称的意思</div><div class="line">*/</div><div class="line"> </div><div class="line">    animation: animationName 1s infinite  ease-in forwards 1s;</div></pre></td></tr></table></figure></li>
+</ul>
 
             <div class="clearfix"></div>
             <hr class="nogutter">
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/06/23/CSS3-transition与animation/" style="float: left;">
-        ← 
-    </a>
     
-    
-    <a class="pull-right" href="/2016/02/16/jQuery/">
-        jQuery →
+    <a class="pull-right" href="/2016/03/30/论坑/">
+        论坑 →
     </a>
     
 </nav>
