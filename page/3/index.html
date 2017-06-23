@@ -183,6 +183,275 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 opening-statement">
                 <div class="col-md-4">
+                    <h3><a href="/2015/10/30/JS基础—数组/">JS基础—数组</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-10-30T10:07:06.000Z" itemprop="datePublished">
+          2015-10-30
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        JS基础—数组一、定义
+字面量定义
+1var arr1 = [1,2,3]
+
+new Array 对象创建法
+1var arr1 = new Array(11,22,33)
+
+
+二、操作
+长度  ： length (数组中元素的个数)
+元素（数组中的某个值）1typeof(arr);   //object
+
+
+三、数组的案例
+冒泡排序
+
+相邻的元素相比较，符合某一标准，前后交换位置
+思路：双重for循环，外层控制轮数，内层控制次数，轮数
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/10/30/JS基础—数组/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/10/25/JS基础—数据类型、操作符、流程控制/">JS基础—数据类型、操作符、流程控制</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-10-25T11:05:06.000Z" itemprop="datePublished">
+          2015-10-25
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        JS基础—数据类型、操作符、流程控制一、数据类型1.1简单数据类型
+简单数据类型存放在栈，传值
+
+
+string
+number
+Boolen
+true : 除0数字、字符串、object
+false : 0、’ ‘ 、undefined、null、NaN
+if在判断时会把括号里的值强行转为boolen类型进行判断
+
+
+undefined
+undefined未定义，null定义了未赋值
+
+
+
+1.2复杂数据类型
+复杂数据类型存放在堆，传址
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/10/25/JS基础—数据类型、操作符、流程控制/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/10/18/JS基础—对象/">JS基础—对象</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-10-18T12:34:08.000Z" itemprop="datePublished">
+          2015-10-18
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        JS基础—对象一、创建
+字面量
+1var obj = &#123;name:'李四'&#125;;
+
+构造函数
+12var obj = new Object();//用new调用执行  首字母大写
+
+
+二、绑定2.1属性绑定
+对象名.属性 = 属性值
+1obj.name = 'lisi';
+
+对象名[属性] = 值
+1obj[name] = 'lisi';
+
+
+2.2方法绑定123obj.sayhi = function()&#123;
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/10/18/JS基础—对象/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/10/12/JS基础—函数基础/">JS基础—函数基础</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-10-12T05:32:06.000Z" itemprop="datePublished">
+          2015-10-12
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        JS基础—函数基础一、参数1.1形参
+占位用，函数定义时，形参无值
+函数名.length  获取函数形参个数
+
+1.2实参
+有具体的值
+arguments.length 获取函数实参个数
+
+1.3形参和实参个数不一致问题
+实参比形参多  ，正常执行，多出来的不管
+相等  正常
+实参比形参少， 如果不传值，默认为undefined，报不报错取决于程序的执行
+
+二、返回值
+调用函数 时，如果想用函数内部的变量，必须返回
+
+2.1特定函数的返
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/10/12/JS基础—函数基础/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/09/13/工作感悟1/">工作感悟</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-09-13T04:50:09.000Z" itemprop="datePublished">
+          2015-09-13
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        工作感悟从放松的校园生活一下子进入工作的紧张环境中，不能说不适应，只能说外面的世界很大，需要学习的东西有很多，学习总结完html和css的知识点，师傅要开始带做项目了，期待在项目中能学到更多不一样的东西，期待项目完成之后，汹涌而来的成就感，加油吧，做好自己的每一天。
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/09/13/工作感悟1/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/09/12/css部分总结/">CSS总结</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-09-12T10:26:06.000Z" itemprop="datePublished">
+          2015-09-12
+      </time>
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        css部分总结一、选择器
+标签选择器   
+类选择器
+一个标签可以调用多个类选择器
+
+
+id选择器
+
+id必须保证唯一，一个标签可以同时调用类和id选择器，但是不能同时调用两个id选择器
+
+
+通配符选择器 ：* 不推荐使用
+
+交集选择器 ：div.box\div#box
+后代选择器 ：空格
+子代选择器 ：父&gt;子
+并集选择器 ： 逗号分隔
+
+二、块、行内和行内块2.1 区分
+块级元素有哪些
+
+div \ p \ h1-h6 \ ul
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/09/12/css部分总结/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
                     <h3><a href="/2015/09/09/HTML部分总结/">HTML总结</a></h3>
                     <span>
                         <span class="post-meta">
