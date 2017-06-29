@@ -17,7 +17,7 @@
 <!--<![endif]-->
 
 <head>
-  <title>git流程命令总结 | SPROUT’S BLOG</title>
+  <title>对比移动开发和响应式开发 | SPROUT’S BLOG</title>
   <!-- Meta data -->
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -151,105 +151,62 @@
         <div class="row col-md-offset-2">
             <div class="col-md-8">
     			<span class="post-meta">
-      <time datetime="2016-11-03T06:32:07.000Z" itemprop="datePublished">
-          2016-11-03
+      <time datetime="2016-11-26T13:14:09.000Z" itemprop="datePublished">
+          2016-11-26
       </time>
     
 </span>
-                <h1>git流程命令总结</h1>
+                <h1>对比移动开发和响应式开发</h1>
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-      		<h1 id="git流程命令总结"><a href="#git流程命令总结" class="headerlink" title="git流程命令总结"></a>git流程命令总结</h1><h2 id="一、本地仓库"><a href="#一、本地仓库" class="headerlink" title="一、本地仓库"></a>一、本地仓库</h2><h3 id="1-1三个区域"><a href="#1-1三个区域" class="headerlink" title="1.1三个区域"></a>1.1三个区域</h3><ol>
-<li>工作目录  代码所在的位置</li>
-<li>暂存区  过渡性区域 </li>
-<li>本地仓库</li>
-</ol>
-<h3 id="1-2四个状态"><a href="#1-2四个状态" class="headerlink" title="1.2四个状态"></a>1.2四个状态</h3><ol>
-<li>未跟踪 untracked</li>
-<li>已暂存 staged</li>
-<li>已提交 commited</li>
-<li>已修改 modified</li>
-</ol>
-<h3 id="1-3基本命令"><a href="#1-3基本命令" class="headerlink" title="1.3基本命令"></a>1.3基本命令</h3><ol>
-<li><p><strong>git add files</strong>   工作目录—&gt; 暂存区   </p>
+      		<h1 id="对比移动开发和响应式开发"><a href="#对比移动开发和响应式开发" class="headerlink" title="对比移动开发和响应式开发"></a>对比移动开发和响应式开发</h1><h2 id="一、应用场景"><a href="#一、应用场景" class="headerlink" title="一、应用场景"></a>一、应用场景</h2><ol>
+<li><p>移动web+pc </p>
 <ul>
-<li>把未跟踪文件添加到暂存区</li>
-<li>把暂存区中修改的内容重新提交到暂存区</li>
+<li>一般在已经有pc端的网站，开发移动端的时候，只需单独开发移动端</li>
 </ul>
 </li>
-<li><p><strong>git commit -m 备注 files</strong></p>
+<li><p>响应式开发</p>
 <ul>
-<li>把暂存区的内容提交到本地仓库</li>
-</ul>
-</li>
-<li><p><strong>git rm –cached files</strong></p>
-<ul>
-<li>把<strong>暂存</strong>的文件移动到工作目录</li>
-</ul>
-</li>
-<li><p><strong>git checkout files</strong> 回滚</p>
-<ul>
-<li>把<strong>暂存区</strong>中修改的内容取消掉</li>
-</ul>
-</li>
-<li><p><strong>git reset HEAD</strong>（HEAD表示本地仓库中的最新快照）</p>
-<ul>
-<li>–hard  工作目录、暂存区和本地仓库都会变化（用本地仓库的某个版本的内容覆盖工作目录和暂存区）  </li>
-<li>–soft  只会回滚本地仓库，但是工作目录和暂存区不会变化</li>
-<li>–mixed  默认  用本地仓库的版本覆盖暂存区，也会回滚本地仓库</li>
+<li>针对新建站的一些网站，现在要求适配移动端，所以就一套页面兼容各种终端，很灵活</li>
 </ul>
 </li>
 </ol>
-<h2 id="二、远程仓库（共享仓库）"><a href="#二、远程仓库（共享仓库）" class="headerlink" title="二、远程仓库（共享仓库）"></a>二、远程仓库（共享仓库）</h2><ol>
-<li><p><strong>git clone</strong> 克隆远程仓库全部内容</p>
-</li>
-<li><p><strong>git pull</strong>  从远程仓库下载最新版本内容，覆盖本地的分支内容</p>
+<h2 id="二、开发"><a href="#二、开发" class="headerlink" title="二、开发"></a>二、开发</h2><ol>
+<li><p>移动</p>
 <ul>
-<li>git pull 远程仓库地址 远程分支：本地分支</li>
-<li>git push 远程仓库地址 远程分支：本地分支 （提交）</li>
+<li>针对性强，开发效率高</li>
+</ul>
+</li>
+<li><p>响应式</p>
+<ul>
+<li>兼容各种终端，效率低</li>
 </ul>
 </li>
 </ol>
-<ol>
-<li><strong>git push</strong> 提交本地的代码版本</li>
-</ol>
-<ol>
-<li><strong>git fetch</strong> 从远程仓库下载最新的版本内容，但是不合并，需要使用git merge 进行手动合并</li>
-</ol>
-<ol>
-<li><strong>git remote</strong> 查看远程分支的别名</li>
-</ol>
-<ol>
-<li>git remote show origin 查看远程仓库别名的具体地址</li>
-</ol>
-<ol>
-<li>git remote add origin 添加远程仓库地址的别名</li>
-</ol>
-<h2 id="三、分支操作"><a href="#三、分支操作" class="headerlink" title="三、分支操作"></a>三、分支操作</h2><ol>
-<li>git branch 分支名称 ：创建分支</li>
-</ol>
-<ol>
-<li><p>git branch 选项 查看本地分支</p>
+<h2 id="三、适配"><a href="#三、适配" class="headerlink" title="三、适配"></a>三、适配</h2><ol>
+<li><p>移动</p>
 <ul>
-<li>-r 查看远程分支</li>
-<li>-a 查看所有分支</li>
+<li>只适配移动设备，pad上体验相对较差</li>
 </ul>
 </li>
-<li><p>git checkout 分支名称 ：切换分支</p>
+<li><p>响应式</p>
+<ul>
+<li>可以适配各种终端</li>
+</ul>
 </li>
-<li><p>git checkout -b 分支名称 ：创建并切换分支</p>
+</ol>
+<h2 id="四、效率"><a href="#四、效率" class="headerlink" title="四、效率"></a>四、效率</h2><ol>
+<li><p>移动</p>
+<ul>
+<li>代码简洁，加载快</li>
+</ul>
 </li>
-<li><p>git branch -d 分支名称： 删除本地分支</p>
+<li><p>响应式</p>
+<ul>
+<li>代码相对复杂，加载慢</li>
+</ul>
 </li>
-<li>git push origin：分支名称 删除远程分支</li>
-<li><p>git push origin –delete 分支名称 删除远程分支</p>
-</li>
-<li><p>git merge 来源分支 ： 合并分支</p>
-</li>
-<li><p>git stash 保存当前版本状态</p>
-</li>
-<li>git stash pop  恢复保存的版本状态</li>
 </ol>
 
             <div class="clearfix"></div>
@@ -257,13 +214,13 @@
         </div>
         <nav class="pagination" role="pagination">
     
-    <a class="pull-left" href="/2017/06/29/由流式布局文字垂直居中引发的思考 /" style="float: left;">
-        ← 
+    <a class="pull-left" href="/2016/12/16/git流程命令总结/" style="float: left;">
+        ← git流程命令总结
     </a>
     
     
-    <a class="pull-right" href="/2016/10/13/canvas/">
-        画布浅谈--canvas →
+    <a class="pull-right" href="/2016/11/11/响应式开发 - Bootstrap框架的使用/">
+        响应式开发 - Bootstrap框架的使用 →
     </a>
     
 </nav>
